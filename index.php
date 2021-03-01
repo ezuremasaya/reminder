@@ -1,5 +1,7 @@
 <?php
 
-echo "Success";
+$greet = "Hello World";
+
+echo $greet;
 
 ?>
