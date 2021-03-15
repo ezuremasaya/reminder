@@ -43,13 +43,12 @@ class SendRemindersCommand extends Command
         $count = 0;
         $times = [
             now('Europe/London')->subDay(),
-            now('Europe/London')->addDay()
+            now('Europe/London')->addDay() 
         ];
         $events = Event::with('registrants')
             ->whereHas('registrants')
             ->whereBetween('start_time', $times)
             ->get();
-
 
         foreach ($events as $event) {
             if (
