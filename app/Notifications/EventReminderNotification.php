@@ -22,7 +22,7 @@ class EventReminderNotification extends Notification
      */
     public function __construct($event)
     {
-        $this->event = $event; 
+        $this->event = $event;
     }
 
     /**
